@@ -1,0 +1,93 @@
+<!--人工智能-->
+<!--开发人：高云龙-->
+<!--开发时间：2022/10/8 上午11:18 -->
+
+
+<!DOCTYPE html>
+<html lang="cmn">
+<head>
+<title>ESG上传服务</title>
+<!-- metatags-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="wedlock register form a Flat Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Meta tag Keywords -->
+<!-- css -->
+<link rel="stylesheet" href="/static/css/style_3.css" type="text/css" media="all" />
+<!--// css -->
+<link href="//fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+</head>
+<body>
+	<section class="agile-header">
+		<div class="agile-heading">
+			<h1><span class="image"></span><label>ESG</label>信息上传<label>——</label>输入上传企业信息</h1>
+		</div>
+		<div class="agile-form">
+			<form action="{% url 'servers_2'%}" method="post">
+				<div>
+
+					<select class="agile-year" name="name">
+						<option value="" label="选择公司" selected="selected">公司</option>
+						{% for company in all_companys %}
+						<option>{{company.name}}</option>
+						{% endfor %}
+					</select>
+
+
+					<select class="agile-year" name="category">
+						<option value="" label="选择行业" selected="selected">行业</option>
+						{% for category in all_Categorys %}
+						<option>{{category.name}}</option>
+						{% endfor %}
+					</select>
+				</div>
+				<div>
+
+					<div class="agile-email">
+
+					<input type="text" name="date" placeholder="信息年份" required="">
+					</div>
+                    <div class="agile-email">
+
+					<input type="text" name="puhui" placeholder="普惠贷款余额(亿元)" required="">
+					</div>
+                    <div class="agile-email">
+
+					<input type="text" name="gupiao" placeholder="每股社会贡献值(元)" required="">
+					</div>
+                    <div class="agile-email">
+
+					<input type="text" name="workers" placeholder="总员工数量(人)" required="">
+					</div>
+                    <div class="agile-email">
+
+					<input type="text" name="female" placeholder="女性员工占比(%)" required="">
+					</div>
+                    <div class="agile-email">
+
+					<input type="text" name="shenong" placeholder="涉农贷款(亿元)" required="">
+					</div>
+                    <div class="agile-email">
+
+					<input type="text" name="donate" placeholder="公益慈善投入(万元)" required="">
+					</div>
+
+
+
+				<div class="agile-submit">
+					<input type="submit" value="继续输入">
+				</div>
+				 {% csrf_token %}
+			</form>
+		</div>
+		<div class="clear"></div>
+
+
+	</section>
+
+</body>
+</html>

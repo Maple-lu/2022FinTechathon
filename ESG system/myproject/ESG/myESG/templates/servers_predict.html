@@ -1,0 +1,139 @@
+<!--人工智能-->
+<!--开发人：高云龙-->
+<!--开发时间：2022/9/27  11:14 -->
+
+<!DOCTYPE html>
+<html lang="cmn">
+<head>
+<title>ESG评级服务</title>
+<!-- metatags-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="wedlock register form a Flat Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Meta tag Keywords -->
+<!-- css -->
+<link rel="stylesheet" href="/static/css/style_3.css" type="text/css" media="all" />
+<!--// css -->
+<link href="//fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+</head>
+<body>
+	<section class="agile-header">
+		<div class="agile-heading">
+			<h1><span class="image"></span><label>ESG</label>评级<label>——</label>输入ESG信息</h1>
+		</div>
+		<div class="agile-form">
+			<form action="{% url 'servers_predict'%}" method="post">
+				<div>
+                    <div class="agile-email">
+                        <h3>E信息输入</h3>
+
+					<input type="text" name="water_consumption" placeholder="耗水量(吨)" required="">
+					</div>
+                    <div class="agile-email">
+
+					<input type="text" name="Energy_consumption" placeholder="电消耗量(千瓦时)" required="">
+					</div>
+                    <div class="agile-email">
+
+					<input type="text" name="Greenhouse_gas_emissions" placeholder="温室气体排放量(吨)" required="">
+					</div>
+                    <div class="agile-email">
+
+					<input type="text" name="Environmental_protection_action_investment" placeholder="绿色信贷余额(亿元)" required="">
+					</div>
+                    <div class="agile-email">
+
+					<input type="text" name="save_coal" placeholder="节约标准煤量(万吨)" required="">
+					</div>
+                    <div class="agile-email">
+
+					<input type="text" name="cut_co2" placeholder="减排二氧化碳量(万吨)" required="">
+					</div>
+                    <div class="agile-email">
+
+					<input type="text" name="cut_COD" placeholder="减排COD量(万吨)" required="">
+					</div>
+                    <div class="agile-email">
+
+					<input type="text" name="cut_andan" placeholder="减排氨氮量(万吨)" required="">
+					</div>
+                    <div class="agile-email">
+
+					<input type="text" name="cut_so2" placeholder="减排SO2量(万吨)" required="">
+					</div>
+                    <div class="agile-email">
+
+					<input type="text" name="cut_NO" placeholder="减排氮氧化合物量(万吨)" required="">
+					</div>
+
+
+                    <div class="agile-email">
+
+					<input type="text" name="cut_water" placeholder="节水量(万吨)" required="">
+					</div>
+                    <div class="agile-email">
+
+					<input type="text" name="oil_waste" placeholder="油耗量(升)" required="">
+					</div>
+                    <div class="agile-email">
+
+					<input type="text" name="paper_waste" placeholder="耗纸量(吨)" required="">
+					</div>
+                    <h3>S信息输入</h3>
+                    <div class="agile-email">
+
+					<input type="text" name="puhui" placeholder="普惠贷款余额(亿元)" required="">
+					</div>
+                    <div class="agile-email">
+
+					<input type="text" name="gupiao" placeholder="每股社会贡献值(元)" required="">
+					</div>
+                    <div class="agile-email">
+
+					<input type="text" name="workers" placeholder="总员工数量(人)" required="">
+					</div>
+                    <div class="agile-email">
+
+					<input type="text" name="female" placeholder="女性员工占比(%)" required="">
+					</div>
+                    <div class="agile-email">
+
+					<input type="text" name="shenong" placeholder="涉农贷款(亿元)" required="">
+					</div>
+                    <div class="agile-email">
+
+					<input type="text" name="donate" placeholder="公益慈善投入(万元)" required="">
+					</div>
+                    <h3>G信息输入</h3>
+                    <div class="agile-email">
+
+					<input type="text" name="value" placeholder="资产(亿元)" required="">
+					</div>
+                    <div class="agile-email">
+
+					<input type="text" name="pure_value" placeholder="净利润(亿元)" required="">
+					</div>
+                    <div class="agile-email">
+
+					<input type="text" name="tax" placeholder="纳税额(亿元)" required="">
+					</div>
+				</div>
+
+
+				<div class="agile-submit">
+					<input type="submit" value="评估">
+				</div>
+				 {% csrf_token %}
+			</form>
+		</div>
+		<div class="clear"></div>
+
+
+	</section>
+
+</body>
+</html>
