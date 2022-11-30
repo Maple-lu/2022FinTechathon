@@ -1,4 +1,4 @@
-# 2022FinTechathon
+# 2022FinTechathon 小试牛刀组
 项目名称： 基于FATE的ESG评级辅助系统
 文件文件说明
 1、ESG文件夹进入，再进入myESG文件夹为整个系统的前端后端框架。
