@@ -1,7 +1,6 @@
 # 2022FinTechathon
 基于FATE的ESG评级辅助系统
-ESG文档代码是基于 [app](链接地址 "https://github.com/Maple-lu/2022FinTechathon/tree/main/ESG%20system/myproject/ESG/myESG/apps")
-[app]: [apps](https://github.com/Maple-lu/2022FinTechathon/tree/main/ESG%20system/myproject/ESG/myESG/apps)
+ESG文档代码是基于 [apps](https://github.com/Maple-lu/2022FinTechathon/tree/main/ESG%20system/myproject/ESG/myESG/apps)
 
 ### 1ESG文件夹进入，再进入myESG文件夹为整个系统的前端后端框架。
 ### 2采用Django框架搭建的WEB服务系统，应用置于[apps](https://github.com/Maple-lu/2022FinTechathon/tree/main/ESG%20system/myproject/ESG/myESG/apps)
